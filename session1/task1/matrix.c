@@ -1,3 +1,5 @@
+/* Functions to handle matrices */
+
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -5,6 +7,13 @@
 #include "matrix.h"
 
 
+/**
+ * @brief Allocates storate for a matrix with the given dimensions
+ *
+ * @param rows Number of rows (> 0)
+ * @param cols Number of columns (> 0)
+ * @return Pointer to the allocated Matrix structure
+ */
 Matrix* matrix_create(int rows, int cols)
 {
     assert(rows > 0 && cols > 0);
@@ -39,6 +48,13 @@ Matrix* matrix_create(int rows, int cols)
 }
 
 
+/**
+ * @brief Multiplies two matrices, producing a new matrix
+ *
+ * @param a Pointer to matrix on the left of the multiplication
+ * @param b Pointer to matrix on the right of the multiplication
+ * @return Pointer to a new Matrix structure containing the product
+ */
 Matrix* matrix_multiply(const Matrix* a, const Matrix* b)
 {
     assert(a != NULL && b != NULL);
@@ -60,6 +76,11 @@ Matrix* matrix_multiply(const Matrix* a, const Matrix* b)
 }
 
 
+/**
+ * @brief Fills a matrix with pseudorandom values in the range [0.0, 1.0]
+ *
+ * @param mat Pointer to matrix that will hold the values
+ */
 void matrix_fill(Matrix* mat)
 {
     assert(mat != NULL);
@@ -74,6 +95,11 @@ void matrix_fill(Matrix* mat)
 }
 
 
+/**
+ * @brief Releases all memory allocated to the given matrix
+ *
+ * @param mat Pointer to an existing Matrix structure
+ */
 void matrix_destroy(Matrix* mat)
 {
     assert(mat != NULL);

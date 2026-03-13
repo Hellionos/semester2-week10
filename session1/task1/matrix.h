@@ -1,3 +1,5 @@
+/* Matrix structure definition and function prototypes */
+
 #ifndef _MATRIX_H_
 #define _MATRIX_H_
 

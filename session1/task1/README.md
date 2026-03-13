@@ -3,6 +3,12 @@
 This task involves timing the execution of various programs using the Linux
 `time` utility.
 
+After you've timed the three programs described below, compare the results.
+
+What differences do you see in the relative proportions of user CPU time,
+system CPU time and time spent not executing on the CPU? How does this
+relate to the tasks that the programs are performing?
+
 ## `lower.c`
 
 This program reads text from a file, transforming any uppercase characters
@@ -46,10 +52,10 @@ times, summing the values that are returned.
 
 ## `multiply.c`, `matrix.c`, `matrix.h`
 
-The files `matrix.h` and `matrix.c` define a data structure and related
-operations for working with 2D matrices. The file `multiply.c` contains a
-program that creates two large (1000 rows x 1000 columns) matrices, fills them
-with random values, then multiplies them together.
+The files `matrix.h` and `matrix.c` define a data structure and functions for
+working with 2D matrices. The file `multiply.c` contains a program that creates
+two large (1000 rows x 1000 columns) matrices, fills them with random values,
+then multiplies them together.
 
 1. Examine the source code.
 
