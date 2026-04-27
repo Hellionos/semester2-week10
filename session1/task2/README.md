@@ -13,6 +13,7 @@
 
 2. Run the program with no command line arguments. Note the time that it
    displays.
+   5000 numbers sorted in 1.79104 seconds
 
 3. Edit `bubblesort.c`. This is the C equivalent of `bubblesort.py`, except
    that sorting algorithm hasn't yet been implemented.

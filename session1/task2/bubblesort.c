@@ -8,6 +8,8 @@
 const int MAX_VALUE = 999999;
 const int DEFAULT_SIZE = 5000;
 const int DEFAULT_TRIALS = 5;
+int swapped = false;
+int temp = 0;
 
 
 void generate_random_numbers(int* data, int size)
@@ -22,8 +24,19 @@ void generate_random_numbers(int* data, int size)
 
 void bubble_sort(int* data, int size)
 {
-    // TODO: implement the bubble sort algorithm
-    // (Use bubblesort.py as your guide)
+    for (int i = 0 ; i<size;i++){
+        swapped = false;
+        for (int j = 0; j<size-1; ++j) {
+            if (data[j] > data[j+1]) {
+                temp = data[j];
+                data[j]=data[j+1];
+                data[j+1]=temp;
+                swapped = true;
+            }
+            if (swapped == false) {
+                break;
+            }
+        }}
 }
 
 
