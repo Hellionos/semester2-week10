@@ -15,7 +15,7 @@ relate to the tasks that the programs are performing?
 > committed to your repository.
 
 ## `lower.c`
-
+#
 This program reads text from a file, transforming any uppercase characters
 into lowercase and writing these to a new file. Names for the input and
 output files must be provided on the command line.
@@ -32,6 +32,12 @@ We have also provided the text of Leo Tolstoy's famously lengthy novel
 
    Make a note of the times that you see.
 
+   @Hellionos ➜ /workspaces/semester2-week10/session1/task1 (main) $ time ./lower war_and_peace.txt tmp.txt
+
+real    0m0.078s
+user    0m0.039s
+sys     0m0.016s
+
 3. Briefly examine `tmp.txt` to verify that the operation has been performed
    correctly, then remove this file.
 
@@ -41,6 +47,12 @@ We have also provided the text of Leo Tolstoy's famously lengthy novel
        time tr A-Z a-z < war_and_peace.txt > tmp.txt
 
    As before, check the contents of `tmp.txt` and then remove the file.
+
+@Hellionos ➜ /workspaces/semester2-week10/session1/task1 (main) $ time tr A-Z a-z < war_and_peace.txt >tmp.txt
+
+real    0m0.045s
+user    0m0.006s
+sys     0m0.010s
 
 ## `sines.c`
 
@@ -54,6 +66,12 @@ times, summing the values that are returned.
        time ./sines
 
    Make a note of the times that you see.
+
+Sum = 1.60059
+
+real    0m0.072s
+user    0m0.069s
+sys     0m0.003s
 
 ## `multiply.c`, `matrix.c`, `matrix.h`
 
@@ -69,3 +87,9 @@ then multiplies them together.
        time ./multiply
 
    Make a note of the times that you see.
+
+@Hellionos ➜ /workspaces/semester2-week10/session1/task1 (main) $ time ./multiply
+
+real    0m5.433s
+user    0m5.237s
+sys     0m0.014s
