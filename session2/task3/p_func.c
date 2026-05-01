@@ -13,9 +13,11 @@ int main( void ) {
 
     int num1=2, num2=3; // data for arguments
 
-    \\ compute the sum using the function - print out the operands and answer
+    // compute the sum using the function - print out the operands and answer
+    printf("%d\n",add( num1, num2 ));
 
-    \\ compute the sum using the pointer - print out the operands and answer
+
+    // compute the sum using the pointer - print out the operands and answer
 
     return 0;
 }
